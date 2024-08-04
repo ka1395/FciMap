@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return const Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: Icon(Icons.location_on,size: 200,),
+        child: Icon(Icons.location_on,size: 200,color:Colors.red,),
       ),
     );
   }

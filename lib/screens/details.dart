@@ -4,10 +4,9 @@ import 'offices.dart';
 import 'path.dart';
 import 'splash.dart';
 
-
 class Details extends StatefulWidget {
-  const Details({super.key});
-
+  const Details({super.key, required this.title});
+  final String title;
   @override
   State<Details> createState() => _DetailsState();
 }
@@ -17,8 +16,13 @@ class _DetailsState extends State<Details> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
-        title: Text(''),
+        centerTitle: true,
+        title: Text(
+          widget.title,
+          style:const  TextStyle(
+            fontSize: 24,
+          ),
+        ),
       ),
       body: GridView.count(
         crossAxisCount: 2, // عدد الأعمدة
@@ -36,7 +40,7 @@ class _DetailsState extends State<Details> {
           _buildGridItem('د. احمد سلامة'),
           _buildGridItem('د. ايمن عنتر'),
           _buildGridItem('د. احمد صادق'),
-           _buildGridItem('د. فوزيه'),
+          _buildGridItem('د. فوزيه'),
         ],
       ),
     );
@@ -49,47 +53,41 @@ class _DetailsState extends State<Details> {
         color: Colors.red,
         borderRadius: BorderRadius.circular(10),
       ),
-       child: MaterialButton(
-                        onPressed: () {
-                          if(title=='د. فوزيه'){
-
-                        var router = new MaterialPageRoute(
-                         builder: (BuildContext context) => SplashScreen(),
-                    );
-                    //can back for previos page
-                    Navigator.of(context).push(router);
-                         }
-                          if(title=='د. احمد صادق'){
-
-                        var router = new MaterialPageRoute(
-                         builder: (BuildContext context) => Offices(),
-                    );
-                    //can back for previos page
-                    Navigator.of(context).push(router);
-                         }
-                         if(title== 'د. محمد حلمي خفاجي')
-                         {
-                        var router = new MaterialPageRoute(
-                         builder: (BuildContext context) =>PathScreen(),
-                            );
-                            //can back for previos page
-                            Navigator.of(context).push(router);
-                         }
-                         
-                         },
-
-         
-                                child: Center(
-                                      child: Text(
-                                        title,
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
+      child: MaterialButton(
+        onPressed: () {
+          if (title == 'د. فوزيه') {
+            var router = new MaterialPageRoute(
+              builder: (BuildContext context) => SplashScreen(),
+            );
+            //can back for previos page
+            Navigator.of(context).push(router);
+          }
+          if (title == 'د. احمد صادق') {
+            var router = new MaterialPageRoute(
+              builder: (BuildContext context) => Offices(),
+            );
+            //can back for previos page
+            Navigator.of(context).push(router);
+          }
+          if (title == 'د. محمد حلمي خفاجي') {
+            var router = new MaterialPageRoute(
+              builder: (BuildContext context) => PathScreen(),
+            );
+            //can back for previos page
+            Navigator.of(context).push(router);
+          }
+        },
+        child: Center(
+          child: Text(
+            title,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 16,
+            ),
           ),
         ),
-             ),
-                            ),
+      ),
     );
   }
 }
