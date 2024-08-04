@@ -1,58 +1,22 @@
 import 'package:flutter/material.dart';
 
-class PathScreen extends StatefulWidget {
-  const PathScreen({super.key});
-
-  @override
-  State<PathScreen> createState() => _PathScreenState();
-}
-
-class _PathScreenState extends State<PathScreen> {
+class PathScreen extends StatelessWidget {
+  const PathScreen({super.key, required this.pathImage});
+  final String pathImage;
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
+      appBar: AppBar(),
       backgroundColor: Colors.white,
       //its a row with a column
       body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                 Container(
-                        height: 300,
-                        width: 300,
-                        child: Image.asset('assets/images/01.gif'),
-                      ),
-
-                      SizedBox(
-                    height: 0.0,
-                  ),
-            Row(
-              children:[
-                 Text(""      , 
-                 style: TextStyle(
-                         // color: Colors.black26,
-                          //color: Color(0xff2e386b),
-                           color: Color.fromARGB(255, 13, 73, 194),
-                          fontSize: 30,
-                           fontWeight: FontWeight.bold,
-                         ),
-                 ),
-              ],
-              ),
-              ],
-            ),
-            // Center(
-            //             child:
-            //            Container(
-            //             height: 180,
-            //             child: Image.asset('assets/images/welcom.png'),
-            //           ),
-            //           ),
-
-          ],
+        child: Container(
+          width: MediaQuery.sizeOf(context).width,
+          height: MediaQuery.sizeOf(context).height,
+          child: Image(
+            fit: BoxFit.fill,
+            image: AssetImage(pathImage),
+          ),
         ),
       ),
     );
