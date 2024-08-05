@@ -1,16 +1,25 @@
 import 'package:flutter/material.dart';
 
 class PathScreen extends StatelessWidget {
-  const PathScreen({super.key, required this.pathImage});
+  const PathScreen({super.key, required this.pathImage, required this.title});
   final String pathImage;
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text(
+          title,
+          style: const TextStyle(
+            fontSize: 18,
+          ),
+        ),
+        centerTitle: true,
+      ),
       backgroundColor: Colors.white,
       //its a row with a column
       body: Center(
-        child: Container(
+        child: SizedBox(
           width: MediaQuery.sizeOf(context).width,
           height: MediaQuery.sizeOf(context).height,
           child: Image(

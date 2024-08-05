@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 
 class Details extends StatefulWidget {
@@ -68,7 +66,17 @@ class _DetailsState extends State<Details> {
             name: data[index].name!,
             depart: data[index].depart!,
             pahtImage: data[index].pathImage!,
-            onTap: () {},
+            onTap: () {
+              
+              //add data[index].pathImageLocation in  pathImage  wwhen image is avilable
+
+              // Navigator.push(
+              //     context,
+              //     MaterialPageRoute(
+              //       builder: (context) => PathScreen(
+              //           pathImage: '', title: data[index].name!),
+              //     ));
+            },
           );
         },
       ),
@@ -154,71 +162,12 @@ class Data {
   final String? name;
   final String? pathImage;
   final String? depart;
+  final String? pathImageLocation;
 
-  Data({this.name, this.pathImage, this.depart});
+  Data({
+    this.name,
+    this.pathImage,
+    this.depart,
+    this.pathImageLocation,
+  });
 }
-// GridView.count(
-//         crossAxisCount: 2, // عدد الأعمدة
-//         childAspectRatio: 2, // نسبة العرض إلى الارتفاع لكل بطاقة
-//         padding: EdgeInsets.all(8.0),
-//         children: <Widget>[
-//           _buildGridItem('د. محمد حلمي خفاجي'),
-//           _buildGridItem('د. محمد حسن فراج'),
-//           _buildGridItem('د. شيرين على طايع'),
-//           _buildGridItem('د. ماجي'),
-//           _buildGridItem('د. هبة نجاتي'),
-//           _buildGridItem('د. هبة الله نبيل'),
-//           _buildGridItem('د. مصطفى ثابت'),
-//           _buildGridItem('د. مصطفى ربيع'),
-//           _buildGridItem('د. احمد سلامة'),
-//           _buildGridItem('د. ايمن عنتر'),
-//           _buildGridItem('د. احمد صادق'),
-//           _buildGridItem('د. فوزيه'),
-//         ],
-//       ),
-
-
-  // Widget _buildGridItem(String title) {
-  //   return Container(
-  //     margin: EdgeInsets.all(8),
-  //     decoration: BoxDecoration(
-  //       color: Colors.red,
-  //       borderRadius: BorderRadius.circular(10),
-  //     ),
-  //     child: MaterialButton(
-  //       onPressed: () {
-  //         if (title == 'د. فوزيه') {
-  //           var router = new MaterialPageRoute(
-  //             builder: (BuildContext context) => SplashScreen(),
-  //           );
-  //           //can back for previos page
-  //           Navigator.of(context).push(router);
-  //         }
-  //         if (title == 'د. احمد صادق') {
-  //           var router = new MaterialPageRoute(
-  //             builder: (BuildContext context) => Offices(),
-  //           );
-  //           //can back for previos page
-  //           Navigator.of(context).push(router);
-  //         }
-  //         if (title == 'د. محمد حلمي خفاجي') {
-  //           var router = new MaterialPageRoute(
-  //             builder: (BuildContext context) => PathScreen(),
-  //           );
-  //           //can back for previos page
-  //           Navigator.of(context).push(router);
-  //         }
-  //       },
-  //       child: Center(
-  //         child: Text(
-  //           title,
-  //           textAlign: TextAlign.center,
-  //           style: TextStyle(
-  //             color: Colors.white,
-  //             fontSize: 16,
-  //           ),
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }

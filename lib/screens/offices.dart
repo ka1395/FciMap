@@ -11,15 +11,27 @@ class Offices extends StatefulWidget {
 }
 
 class _OfficesState extends State<Offices> {
-  List<String> nameOffices = [
-    'مكتب عميد الكلية',
-    'مكتب وكيل الكلية لشؤون الدراسات العليا',
-    'مكتب وكيل الكلية لشؤون التعليم والطلاب',
-    'مكتب وكيل الكلية لشؤون خدمة المجتمع والبيئة',
-    'أعضاء هيئة التدريس',
-    'أعضاء الهيئة المعاونة',
-    'المكاتب الإدارية',
-    'المدرجات والمعامل والقاعات',
+  List<OfficeData> nameOffices = [
+    OfficeData(
+        name: 'مكتب عميد الكلية', imagePath: "assets/images/office0.png"),
+    OfficeData(
+        name: 'مكتب وكيل الكلية لشؤون الدراسات العليا',
+        imagePath: "assets/images/office1.png"),
+    OfficeData(
+        name: 'مكتب وكيل الكلية لشؤون التعليم والطلاب',
+        imagePath: "assets/images/office2.png"),
+    OfficeData(
+        name: 'مكتب وكيل الكلية لشؤون خدمة المجتمع والبيئة',
+        imagePath: "assets/images/office3.png"),
+    OfficeData(
+        name: 'أعضاء هيئة التدريس', imagePath: "assets/images/office4.png"),
+    OfficeData(
+        name: 'أعضاء الهيئة المعاونة', imagePath: "assets/images/office5.png"),
+    OfficeData(
+        name: 'المكاتب الإدارية', imagePath: "assets/images/office6.png"),
+    OfficeData(
+        name: 'المدرجات والمعامل والقاعات',
+        imagePath: "assets/images/office7.png"),
   ];
   @override
   Widget build(BuildContext context) {
@@ -51,20 +63,21 @@ class _OfficesState extends State<Offices> {
             itemCount: nameOffices.length,
             itemBuilder: (context, index) {
               return CustomCard(
-                title: nameOffices[index],
-                pathImage: "assets/images/office$index.png",
+                title: nameOffices[index].name,
+                pathImage: nameOffices[index].imagePath,
                 onTap: () {
                   switch (index) {
                     case 0:
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => const PathScreen(
+                          builder: (BuildContext context) => PathScreen(
+                                title: nameOffices[index].name,
                                 pathImage: 'assets/images/01.gif',
                               )));
                       break;
                     case 4:
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) =>
-                              Details(title: nameOffices[index])));
+                              Details(title: nameOffices[index].name)));
                       break;
                   }
                 },
@@ -134,6 +147,12 @@ class CustomCard extends StatelessWidget {
   }
 }
 
+class OfficeData {
+  final String name;
+  final String imagePath;
+
+  OfficeData({required this.name, required this.imagePath});
+}
    // Expanded(
           //   child: GridView.count(
           //     crossAxisCount: 2,
