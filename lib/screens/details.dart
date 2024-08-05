@@ -1,3 +1,4 @@
+import 'package:fci_map/screens/path.dart';
 import 'package:flutter/material.dart';
 
 class Details extends StatefulWidget {
@@ -12,39 +13,58 @@ class _DetailsState extends State<Details> {
     Data(
         name: 'د. محمد حلمي خفاجي',
         pathImage: "assets/images/person.png",
-        depart: "علوم حاسب"),
+        depart: "علوم حاسب",
+        pathImageLocation: 'assets/images/01.gif'
+        
+        ),
     Data(
         name: 'د. محمد حسن فراج',
         pathImage: "assets/images/person.png",
-        depart: "علوم حاسب"),
+        depart: "علوم حاسب",
+         pathImageLocation: 'assets/images/01.gif'
+        
+        ),
     Data(
         name: 'د. شيرين على طايع',
         pathImage: "assets/images/person.png",
-        depart: "علوم حاسب"),
+        depart: "علوم حاسب", 
+        pathImageLocation: 'assets/images/01.gif'),
     Data(
         name: 'د. ماجي',
         pathImage: "assets/images/person.png",
-        depart: "علوم حاسب"),
+        depart: "علوم حاسب",
+         pathImageLocation: 'assets/images/01.gif'
+        ),
     Data(
         name: 'د. هبة نجاتي',
         pathImage: "assets/images/person.png",
-        depart: "نظام معلومات"),
+        depart: "نظام معلومات",
+         pathImageLocation: 'assets/images/01.gif'
+        ),
     Data(
         name: 'د. هبة الله نبيل',
         pathImage: "assets/images/person.png",
-        depart: "نظام معلومات"),
+        depart: "نظام معلومات",
+         pathImageLocation: 'assets/images/01.gif'
+        ),
     Data(
         name: 'د. مصطفى ثابت',
         pathImage: "assets/images/person.png",
-        depart: "نظام معلومات"),
+        depart: "نظام معلومات",
+         pathImageLocation: 'assets/images/01.gif'
+        ),
     Data(
         name: 'د. احمد سلامة',
         pathImage: "assets/images/person.png",
-        depart: "نظام معلومات"),
+        depart: "نظام معلومات",
+         pathImageLocation: 'assets/images/01.gif'
+        ),
     Data(
         name: 'د. مصطفى ربيع',
         pathImage: "assets/images/person.png",
-        depart: 'علوم الحاسب'),
+        depart: 'علوم الحاسب',
+         pathImageLocation: 'assets/images/01.gif'
+        ),
   ];
 
   @override
@@ -67,15 +87,17 @@ class _DetailsState extends State<Details> {
             depart: data[index].depart!,
             pahtImage: data[index].pathImage!,
             onTap: () {
-              
-              //add data[index].pathImageLocation in  pathImage  wwhen image is avilable
+               
+               //add data[index].pathImageLocation in  pathImage  wwhen image is avilable
 
-              // Navigator.push(
-              //     context,
-              //     MaterialPageRoute(
-              //       builder: (context) => PathScreen(
-              //           pathImage: '', title: data[index].name!),
-              //     ));
+               Navigator.push(
+                   context,
+                    MaterialPageRoute(
+                      builder: (context) => PathScreen(
+                          //pathImage:data[index].pathImage!,
+                          pathImage:data[index].pathImageLocation! ,
+                           title: data[index].name!,),
+                   ));
             },
           );
         },

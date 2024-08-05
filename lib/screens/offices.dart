@@ -24,7 +24,13 @@ class _OfficesState extends State<Offices> {
         name: 'مكتب وكيل الكلية لشؤون خدمة المجتمع والبيئة',
         imagePath: "assets/images/office3.png"),
     OfficeData(
+        name: ' مكتب الارشاد الاكاديمي',
+        imagePath: "assets/images/office7.png"), 
+     OfficeData(
+       name: 'مجلس الكليه', imagePath: "assets/images/office2.png"),      
+    OfficeData(
         name: 'أعضاء هيئة التدريس', imagePath: "assets/images/office4.png"),
+   
     OfficeData(
         name: 'أعضاء الهيئة المعاونة', imagePath: "assets/images/office5.png"),
     OfficeData(
@@ -32,6 +38,7 @@ class _OfficesState extends State<Offices> {
     OfficeData(
         name: 'المدرجات والمعامل والقاعات',
         imagePath: "assets/images/office7.png"),
+    
   ];
   @override
   Widget build(BuildContext context) {
@@ -74,7 +81,49 @@ class _OfficesState extends State<Offices> {
                                 pathImage: 'assets/images/01.gif',
                               )));
                       break;
-                    case 4:
+
+
+                  case 1:
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => PathScreen(
+                                title: nameOffices[index].name,
+                                pathImage: 'assets/images/07.gif',
+                              )));
+                      break;
+                   case 2:
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => PathScreen(
+                                title: nameOffices[index].name,
+                                pathImage: 'assets/images/04.gif',
+                              )));
+                      break;
+
+                    case 3:
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => PathScreen(
+                                title: nameOffices[index].name,
+                                pathImage: 'assets/images/05.gif',
+                              )));
+                      break;
+
+                     case 4:
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => PathScreen(
+                                title: nameOffices[index].name,
+                                pathImage: 'assets/images/02.gif',
+                              )));
+                      break;  
+
+                      case 5:
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => PathScreen(
+                                title: nameOffices[index].name,
+                                pathImage: 'assets/images/06.gif',
+                              )));
+                      break;  
+                      
+
+                    case 6:
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) =>
                               Details(title: nameOffices[index].name)));
