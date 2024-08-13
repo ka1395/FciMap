@@ -11,62 +11,84 @@ class Details extends StatefulWidget {
 class _DetailsState extends State<Details> {
   List<Data> data = [
     Data(
-        name: 'د. محمد حلمي خفاجي',
+        name: 'ا.د. محمد حلمي خفاجي  ',
         pathImage: "assets/images/person.png",
         depart: "علوم حاسب",
-        pathImageLocation: 'assets/images/01.gif'
+        pathImageLocation: 'assets/images/4006.gif'
         
         ),
-    Data(
-        name: 'د. محمد حسن فراج',
-        pathImage: "assets/images/person.png",
-        depart: "علوم حاسب",
-         pathImageLocation: 'assets/images/01.gif'
-        
-        ),
-    Data(
-        name: 'د. شيرين على طايع',
-        pathImage: "assets/images/person.png",
-        depart: "علوم حاسب", 
-        pathImageLocation: 'assets/images/01.gif'),
-    Data(
-        name: 'د. ماجي',
-        pathImage: "assets/images/person.png",
-        depart: "علوم حاسب",
-         pathImageLocation: 'assets/images/01.gif'
-        ),
-    Data(
-        name: 'د. هبة نجاتي',
+          Data(
+        name: 'ا.د. هيثم الفيل ',
         pathImage: "assets/images/person.png",
         depart: "نظام معلومات",
-         pathImageLocation: 'assets/images/01.gif'
+         pathImageLocation: 'assets/images/4006.gif'
         ),
+         Data(
+        name: 'ا.د. محمد حسن ابراهيم   ',
+        pathImage: "assets/images/person.png",
+        depart: "نظام معلومات",
+         pathImageLocation: 'assets/images/4006.gif'
+        ),
+       
+    
+    Data(
+        name: 'د. رشاالبدري',
+        pathImage: "assets/images/person.png",
+        depart: "نظام معلومات",
+         pathImageLocation: 'assets/images/4005.gif'
+        ),
+    Data(
+        name:  ' د. بسمه حسن',
+        pathImage: "assets/images/person.png",
+        depart: "علوم حاسب", 
+         pathImageLocation: 'assets/images/4005.gif'
+        ),
+        Data(
+        name:  ' د.انجي رجائي ',
+        pathImage: "assets/images/person.png",
+        depart: "علوم اساسية", 
+         pathImageLocation: 'assets/images/4005.gif'
+        ),
+        Data(
+        name: 'د.اسلام عيد      ',
+        pathImage: "assets/images/person.png",
+        depart: "نظام معلومات",
+         pathImageLocation: 'assets/images/4005.gif'
+        ),
+         Data(
+        name: 'د. مصطفي ربيع        ',
+        pathImage: "assets/images/person.png",
+        depart:  'علوم الحاسب',
+         pathImageLocation: 'assets/images/4006.gif'
+        ),
+         Data(
+        name: 'د. هبة  نجاتي  ',
+        pathImage: "assets/images/person.png",
+        depart: "علوم اساسية", 
+         pathImageLocation: 'assets/images/4007.gif'
+        ),
+         Data(
+        name: 'د. فوزية',
+        pathImage: "assets/images/person.png",
+        depart: 'علوم الحاسب',
+         pathImageLocation: 'assets/images/4007.gif'
+        ),
+          
+         Data(
+        name: 'د.جهاد حسن ',
+        pathImage: "assets/images/person.png",
+        depart: 'علوم الحاسب',
+         pathImageLocation: 'assets/images/4007.gif'
+        ),
+        
     Data(
         name: 'د. هبة الله نبيل',
         pathImage: "assets/images/person.png",
         depart: "نظام معلومات",
-         pathImageLocation: 'assets/images/01.gif'
+         pathImageLocation: 'assets/images/4007.gif'
         ),
-    Data(
-        name: 'د. مصطفى ثابت',
-        pathImage: "assets/images/person.png",
-        depart: "نظام معلومات",
-         pathImageLocation: 'assets/images/01.gif'
-        ),
-    Data(
-        name: 'د. احمد سلامة',
-        pathImage: "assets/images/person.png",
-        depart: "نظام معلومات",
-         pathImageLocation: 'assets/images/01.gif'
-        ),
-    Data(
-        name: 'د. مصطفى ربيع',
-        pathImage: "assets/images/person.png",
-        depart: 'علوم الحاسب',
-         pathImageLocation: 'assets/images/01.gif'
-        ),
+   
   ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -96,7 +118,7 @@ class _DetailsState extends State<Details> {
                       builder: (context) => PathScreen(
                           //pathImage:data[index].pathImage!,
                           pathImage:data[index].pathImageLocation! ,
-                           title: data[index].name!,),
+                           title: data[index].name!, pathImageLocation: '',),
                    ));
             },
           );

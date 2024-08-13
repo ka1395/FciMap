@@ -1,3 +1,4 @@
+import 'package:fci_map/screens/details%20_labs.dart';
 import 'package:fci_map/screens/path.dart';
 import 'package:flutter/material.dart';
 
@@ -78,7 +79,7 @@ class _OfficesState extends State<Offices> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) => PathScreen(
                                 title: nameOffices[index].name,
-                                pathImage: 'assets/images/01.gif',
+                                pathImage: 'assets/images/01.gif', pathImageLocation: '',
                               )));
                       break;
 
@@ -87,14 +88,14 @@ class _OfficesState extends State<Offices> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) => PathScreen(
                                 title: nameOffices[index].name,
-                                pathImage: 'assets/images/07.gif',
+                                pathImage: 'assets/images/07.gif', pathImageLocation: '',
                               )));
                       break;
                    case 2:
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) => PathScreen(
                                 title: nameOffices[index].name,
-                                pathImage: 'assets/images/04.gif',
+                                pathImage: 'assets/images/04.gif', pathImageLocation: '',
                               )));
                       break;
 
@@ -102,7 +103,7 @@ class _OfficesState extends State<Offices> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) => PathScreen(
                                 title: nameOffices[index].name,
-                                pathImage: 'assets/images/05.gif',
+                                pathImage: 'assets/images/05.gif', pathImageLocation: '',
                               )));
                       break;
 
@@ -110,7 +111,7 @@ class _OfficesState extends State<Offices> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) => PathScreen(
                                 title: nameOffices[index].name,
-                                pathImage: 'assets/images/02.gif',
+                                pathImage: 'assets/images/02.gif', pathImageLocation: '',
                               )));
                       break;  
 
@@ -118,7 +119,7 @@ class _OfficesState extends State<Offices> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) => PathScreen(
                                 title: nameOffices[index].name,
-                                pathImage: 'assets/images/06.gif',
+                                pathImage: 'assets/images/06.gif', pathImageLocation: '',
                               )));
                       break;  
                       
@@ -127,6 +128,12 @@ class _OfficesState extends State<Offices> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) =>
                               Details(title: nameOffices[index].name)));
+                      break;
+
+                      case 9:
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              Labs(title: nameOffices[index].name)));
                       break;
                   }
                 },
