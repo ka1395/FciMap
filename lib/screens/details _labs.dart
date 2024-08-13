@@ -16,14 +16,13 @@ class _LabsState extends State<Labs> {
         name:  'قاعه سيمنار 2',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
-        pathImageLocation:  'assets/images/001.gif'
-        
+        pathImageLocation:  'assets/images/1.gif',
         ),
         Data(
         name:  'معمل التصميم المنطقي',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
-        pathImageLocation:  "assets/images/001.gif"
+        pathImageLocation:  "assets/images/09.gif"
         
         ),
         Data(
@@ -75,7 +74,7 @@ class _LabsState extends State<Labs> {
                     MaterialPageRoute(
                       builder: (context) => PathScreen(
                          // pathImage:data[index].pathImage!,
-                          pathImage :data[index].pathImageLocation! ,
+                           pathImage :data[index].pathImageLocation!,
                            title: data[index].name!, pathImageLocation: '', ),
                            
                    ));
