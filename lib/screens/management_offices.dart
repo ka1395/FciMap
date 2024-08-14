@@ -2,49 +2,69 @@ import 'package:fci_map/screens/path.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-class Labs extends StatefulWidget {
-  const Labs({super.key ,required this.title});
- final String title;
+class ManagementOffices extends StatefulWidget {
+  const ManagementOffices({super.key,required this.title});
+final String title;
   @override
-  State<Labs> createState() => _LabsState();
+  State<ManagementOffices> createState() => _ManagementOfficesState();
 }
 
-class _LabsState extends State<Labs> {
+class _ManagementOfficesState extends State<ManagementOffices> {
   @override
  List<Data> data = [
     Data(
-        name:  'قاعه سيمنار 2 /الدور الثالث  ',
-        pathImage: "assets/images/office2.png",
+        name:  'الدور الارضي/ شئون العاملين',
+        pathImage: "assets/images/office3.png",
         //depart: "علوم حاسب",
-        pathImageLocation:  'assets/images/1.gif',
+        pathImageLocation:  ' assets/images/G001.gif ',
         ),
         Data(
-        name:  ' معمل التصميم المنطقي /الدور الثالث',
+        name:   '  وحدة شئون الجودة / الدورالارضي',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
-        pathImageLocation:  "assets/images/09.gif"
+        pathImageLocation:  "assets/images/G003.gif"
         
         ),
         Data(
-        name:  'معمل 1 /الدور التاني ',
+        name:  'معمل رقم 1 /الدور الارضي ',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
-        pathImageLocation: 'assets/images/003.gif'
+        pathImageLocation: 'assets/images/G002.gif'
         ),
        
      Data(
-        name:  ' مدرج 1 /الدور التاني ',
+        name:   'الكادر العام /الدور الارضي',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
-        pathImageLocation: 'assets/images/004.gif'
+        pathImageLocation: 'assets/images/G005.gif'
         ),
 
     Data(
-        name:  '   معمل البيانات الكبيرة /الدورالثالث ',
+        name:  '    شئون الطلاب/الدور الارضي      ',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
-        pathImageLocation: 'assets/images/005.gif'
+        pathImageLocation: 'assets/images/G004.gif'
         ),
+        
+    Data(
+        name:  'الاستحقاقات/الدور الارضي',
+        pathImage: "assets/images/office2.png",
+        //depart: "علوم حاسب",
+        pathImageLocation: 'assets/images/G006.gif'
+        ),
+         Data(
+        name:  'الدراسات العليا/الدور الارضي',
+        pathImage: "assets/images/office2.png",
+        //depart: "علوم حاسب",
+        pathImageLocation: 'assets/images/G007.gif'
+        ),
+         Data(
+        name:  'الخريجين/الدور الارضي',
+        pathImage: "assets/images/office2.png",
+        //depart: "علوم حاسب",
+        pathImageLocation: 'assets/images/G008.gif'
+        ),
+        
   ];
   @override
   Widget build(BuildContext context) {

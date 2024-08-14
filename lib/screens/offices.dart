@@ -1,4 +1,5 @@
 import 'package:fci_map/screens/details%20_labs.dart';
+import 'package:fci_map/screens/management_offices.dart';
 import 'package:fci_map/screens/path.dart';
 import 'package:flutter/material.dart';
 
@@ -14,21 +15,21 @@ class Offices extends StatefulWidget {
 class _OfficesState extends State<Offices> {
   List<OfficeData> nameOffices = [
     OfficeData(
-        name: 'مكتب عميد الكلية', imagePath: "assets/images/office0.png"),
+        name: 'مكتب عميد الكلية /الدور الاول', imagePath: "assets/images/office0.png"),
     OfficeData(
-        name: 'مكتب وكيل الكلية لشؤون الدراسات العليا',
+        name: ' مكتب وكيل الكلية لشؤون الدراسات العليا /الدور الاول ',
         imagePath: "assets/images/office1.png"),
     OfficeData(
-        name: 'مكتب وكيل الكلية لشؤون التعليم والطلاب',
+        name: 'مكتب وكيل الكلية لشؤون التعليم والطلاب/الدور الاول    ',
         imagePath: "assets/images/office2.png"),
     OfficeData(
-        name: 'مكتب وكيل الكلية لشؤون خدمة المجتمع والبيئة',
+        name: 'مكتب وكيل الكلية لشؤون خدمة المجتمع والبيئة/الدور الاول  ',
         imagePath: "assets/images/office3.png"),
     OfficeData(
-        name: ' مكتب الارشاد الاكاديمي',
+        name: ' مكتب الارشاد الاكاديمي /الدور الاول  ',
         imagePath: "assets/images/office7.png"), 
      OfficeData(
-       name: 'مجلس الكليه', imagePath: "assets/images/office2.png"),      
+       name: 'مجلس الكليه /الدور الاول  ', imagePath: "assets/images/office2.png"),      
     OfficeData(
         name: 'أعضاء هيئة التدريس', imagePath: "assets/images/office4.png"),
    
@@ -128,6 +129,13 @@ class _OfficesState extends State<Offices> {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) =>
                               Details(title: nameOffices[index].name)));
+                      break;
+                      
+
+                       case 8:
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              ManagementOffices(title: nameOffices[index].name)));
                       break;
 
                       case 9:

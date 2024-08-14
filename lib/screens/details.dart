@@ -11,20 +11,20 @@ class Details extends StatefulWidget {
 class _DetailsState extends State<Details> {
   List<Data> data = [
     Data(
-        name: 'ا.د. محمد حلمي خفاجي  ',
+        name: 'ا.د. محمد حلمي خفاجي /الدور الاول ',
         pathImage: "assets/images/person.png",
         depart: "علوم حاسب",
         pathImageLocation: 'assets/images/4006.gif'
         
         ),
           Data(
-        name: 'ا.د. هيثم الفيل ',
+        name: 'ا.د. هيثم الفيل /الدور الاول',
         pathImage: "assets/images/person.png",
         depart: "نظام معلومات",
          pathImageLocation: 'assets/images/4006.gif'
         ),
          Data(
-        name: 'ا.د. محمد حسن ابراهيم   ',
+        name: 'ا.د. محمد حسن ابراهيم /الدور الاول  ',
         pathImage: "assets/images/person.png",
         depart: "نظام معلومات",
          pathImageLocation: 'assets/images/4006.gif'
@@ -32,57 +32,57 @@ class _DetailsState extends State<Details> {
        
     
     Data(
-        name: 'د. رشاالبدري',
+        name: 'د. رشاالبدري /الدور الرابع  ',
         pathImage: "assets/images/person.png",
         depart: "نظام معلومات",
          pathImageLocation: 'assets/images/4005.gif'
         ),
     Data(
-        name:  ' د. بسمه حسن',
+        name:  ' د. بسمه حسن /الدور الرابع ',
         pathImage: "assets/images/person.png",
         depart: "علوم حاسب", 
          pathImageLocation: 'assets/images/4005.gif'
         ),
         Data(
-        name:  ' د.انجي رجائي ',
+        name:  ' د.انجي رجائي /الدور الرابع',
         pathImage: "assets/images/person.png",
         depart: "علوم اساسية", 
          pathImageLocation: 'assets/images/4005.gif'
         ),
         Data(
-        name: 'د.اسلام عيد      ',
+        name: 'د.اسلام عيد /الدور الرابع    ',
         pathImage: "assets/images/person.png",
         depart: "نظام معلومات",
          pathImageLocation: 'assets/images/4005.gif'
         ),
          Data(
-        name: 'د. مصطفي ربيع        ',
+        name: 'د. مصطفي ربيع /الدور الرابع       ',
         pathImage: "assets/images/person.png",
         depart:  'علوم الحاسب',
          pathImageLocation: 'assets/images/4006.gif'
         ),
          Data(
-        name: 'د. هبة  نجاتي  ',
+        name: 'د. هبة  نجاتي /الدورالرابع',
         pathImage: "assets/images/person.png",
         depart: "علوم اساسية", 
          pathImageLocation: 'assets/images/4007.gif'
         ),
          Data(
-        name: 'د. فوزية',
+        name: 'د. فوزية /الدور الرابع  ',
         pathImage: "assets/images/person.png",
         depart: 'علوم الحاسب',
          pathImageLocation: 'assets/images/4007.gif'
         ),
           
          Data(
-        name: 'د.جهاد حسن ',
+        name: 'د.جهاد حسن /الدور الرابع',
         pathImage: "assets/images/person.png",
         depart: 'علوم الحاسب',
          pathImageLocation: 'assets/images/4007.gif'
         ),
         
     Data(
-        name: 'د. هبة الله نبيل',
+        name: 'د. هبة الله نبيل /الدور الرابع   ',
         pathImage: "assets/images/person.png",
         depart: "نظام معلومات",
          pathImageLocation: 'assets/images/4007.gif'
