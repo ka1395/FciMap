@@ -99,7 +99,6 @@ class _OfficesState extends State<Offices> {
                                 pathImage: 'assets/images/04.gif', pathImageLocation: '',
                               )));
                       break;
-
                     case 3:
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) => PathScreen(

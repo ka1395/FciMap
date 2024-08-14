@@ -13,14 +13,14 @@ class _ManagementOfficesState extends State<ManagementOffices> {
   @override
  List<Data> data = [
     Data(
-        name:  'الدور الارضي/ شئون العاملين',
+        name:   'شئون العاملين/الدور الارضي',
         pathImage: "assets/images/office3.png",
         //depart: "علوم حاسب",
-        pathImageLocation:  ' assets/images/G001.gif ',
+        pathImageLocation:  'assets/images/G001.gif',
         ),
         Data(
         name:   '  وحدة شئون الجودة / الدورالارضي',
-        pathImage: "assets/images/office2.png",
+        pathImage: "assets/images/office3.png",
         //depart: "علوم حاسب",
         pathImageLocation:  "assets/images/G003.gif"
         
@@ -34,13 +34,13 @@ class _ManagementOfficesState extends State<ManagementOffices> {
        
      Data(
         name:   'الكادر العام /الدور الارضي',
-        pathImage: "assets/images/office2.png",
+        pathImage: "assets/images/office3.png",
         //depart: "علوم حاسب",
         pathImageLocation: 'assets/images/G005.gif'
         ),
 
     Data(
-        name:  '    شئون الطلاب/الدور الارضي      ',
+        name:  '    شئون الطلاب/الدور الارضي ',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
         pathImageLocation: 'assets/images/G004.gif'
@@ -48,7 +48,7 @@ class _ManagementOfficesState extends State<ManagementOffices> {
         
     Data(
         name:  'الاستحقاقات/الدور الارضي',
-        pathImage: "assets/images/office2.png",
+        pathImage: "assets/images/office3.png",
         //depart: "علوم حاسب",
         pathImageLocation: 'assets/images/G006.gif'
         ),
@@ -60,7 +60,7 @@ class _ManagementOfficesState extends State<ManagementOffices> {
         ),
          Data(
         name:  'الخريجين/الدور الارضي',
-        pathImage: "assets/images/office2.png",
+        pathImage: "assets/images/office3.png",
         //depart: "علوم حاسب",
         pathImageLocation: 'assets/images/G008.gif'
         ),

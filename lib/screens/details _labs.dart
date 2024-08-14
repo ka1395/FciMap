@@ -13,7 +13,7 @@ class _LabsState extends State<Labs> {
   @override
  List<Data> data = [
     Data(
-        name:  'قاعه سيمنار 2 /الدور الثالث  ',
+        name:  'قاعه سيمنار 2 /الدور الثالث ',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
         pathImageLocation:  'assets/images/1.gif',
@@ -26,21 +26,21 @@ class _LabsState extends State<Labs> {
         
         ),
         Data(
-        name:  'معمل 1 /الدور التاني ',
+        name:  'معمل 1 /الدور التاني',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
         pathImageLocation: 'assets/images/003.gif'
         ),
        
      Data(
-        name:  ' مدرج 1 /الدور التاني ',
+        name:  ' مدرج 1 /الدور التاني',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
         pathImageLocation: 'assets/images/004.gif'
         ),
 
     Data(
-        name:  '   معمل البيانات الكبيرة /الدورالثالث ',
+        name:  '   معمل البيانات الكبيرة /الدورالثالث',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
         pathImageLocation: 'assets/images/005.gif'
