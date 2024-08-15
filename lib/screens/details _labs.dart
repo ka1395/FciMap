@@ -18,6 +18,25 @@ class _LabsState extends State<Labs> {
         //depart: "علوم حاسب",
         pathImageLocation:  'assets/images/1.gif',
         ),
+         Data(
+        name:  '  قاعة الدراسات العليا /الدور الرابع',
+        pathImage: "assets/images/office2.png",
+        //depart: "علوم حاسب",
+        pathImageLocation: 'assets/images/4004.gif'
+        ),
+        Data(
+        name:  'مدرج 1 /الدور التاني',
+        pathImage: "assets/images/office2.png",
+        //depart: "علوم حاسب",
+        pathImageLocation: 'assets/images/004.gif'
+        ),
+         Data(
+        name:  'مدرج 3 /الدورالرابع',
+        pathImage: "assets/images/office2.png",
+        //depart: "علوم حاسب",
+        pathImageLocation: 'assets/images/4003.gif'
+        ),
+          
         Data(
         name:  ' معمل التصميم المنطقي /الدور الثالث',
         pathImage: "assets/images/office2.png",
@@ -26,25 +45,31 @@ class _LabsState extends State<Labs> {
         
         ),
         Data(
+        name:  'معمل البيانات الكبيرة /الدورالثالث',
+        pathImage: "assets/images/office2.png",
+        //depart: "علوم حاسب",
+        pathImageLocation: 'assets/images/005.gif'
+        ),
+        Data(
         name:  'معمل 1 /الدور التاني',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
         pathImageLocation: 'assets/images/003.gif'
         ),
-       
-     Data(
-        name:  ' مدرج 1 /الدور التاني',
+      
+         Data(
+        name:  'معمل 3 /الدورالثالث',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
-        pathImageLocation: 'assets/images/004.gif'
+        pathImageLocation: 'assets/images/4001.gif'
         ),
-
-    Data(
-        name:  '   معمل البيانات الكبيرة /الدورالثالث',
+         Data(
+        name:  'معمل 6,7 /الدور الرابع',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
-        pathImageLocation: 'assets/images/005.gif'
+        pathImageLocation: 'assets/images/4002.gif'
         ),
+        
   ];
   @override
   Widget build(BuildContext context) {
