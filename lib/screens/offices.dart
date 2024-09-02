@@ -130,7 +130,7 @@ class _OfficesState extends State<Offices> {
                               Details(title: nameOffices[index].name)));
                       break;
                       
-
+                        
                        case 8:
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) =>

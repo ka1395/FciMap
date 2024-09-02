@@ -36,16 +36,22 @@ class _LabsState extends State<Labs> {
         //depart: "علوم حاسب",
         pathImageLocation: 'assets/images/4003.gif'
         ),
-          
+         Data(
+        name:  'معمل الذكاءالاصطناعي /الدور الاول',
+        pathImage: "assets/images/office2.png",
+        //depart: "علوم حاسب",
+        pathImageLocation:  "assets/images/03.gif"
+        ),   
+
         Data(
-        name:  ' معمل التصميم المنطقي /الدور الثالث',
+        name:  ' معمل التصميم المنطقي /الدور الثاني',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
         pathImageLocation:  "assets/images/09.gif"
         
         ),
         Data(
-        name:  'معمل البيانات الكبيرة /الدورالثالث',
+        name:  'معمل البيانات الكبيرة /الدور التاني',
         pathImage: "assets/images/office2.png",
         //depart: "علوم حاسب",
         pathImageLocation: 'assets/images/005.gif'
