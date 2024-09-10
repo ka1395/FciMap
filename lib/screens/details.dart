@@ -10,6 +10,19 @@ class Details extends StatefulWidget {
 
 class _DetailsState extends State<Details> {
   List<Data> data = [
+      
+       Data(
+        name: 'د. احمد سلامه /الدور الثاني',
+        pathImage: "assets/images/person.png",
+        depart:  'نظم معلومات',
+         pathImageLocation: 'assets/images/salama001G.gif'
+        ),
+         Data(
+        name: 'د. مصطفي ثابت /الدور الثاني',
+        pathImage: "assets/images/person.png",
+        depart:  'نطم معلومات',
+         pathImageLocation: 'assets/images/sabet002G.gif'
+        ),
     Data(
         name: 'ا.د. محمد حلمي خفاجي /الدور الرابع ',
         pathImage: "assets/images/person.png",

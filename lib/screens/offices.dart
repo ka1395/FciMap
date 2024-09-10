@@ -33,8 +33,8 @@ class _OfficesState extends State<Offices> {
     OfficeData(
         name: 'أعضاء هيئة التدريس', imagePath: "assets/images/office4.png"),
    
-    OfficeData(
-        name: 'أعضاء الهيئة المعاونة', imagePath: "assets/images/office5.png"),
+   // OfficeData(
+       // name: 'أعضاء الهيئة المعاونة', imagePath: "assets/images/office5.png"),
     OfficeData(
         name: 'المكاتب الإدارية', imagePath: "assets/images/office6.png"),
     OfficeData(
