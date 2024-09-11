@@ -34,7 +34,7 @@ class _OfficesState extends State<Offices> {
         name: 'أعضاء هيئة التدريس', imagePath: "assets/images/office4.png"),
    
    // OfficeData(
-       // name: 'أعضاء الهيئة المعاونة', imagePath: "assets/images/office5.png"),
+      //  name: 'أعضاء الهيئة المعاونة', imagePath: "assets/images/office5.png"),
     OfficeData(
         name: 'المكاتب الإدارية', imagePath: "assets/images/office6.png"),
     OfficeData(
@@ -131,13 +131,13 @@ class _OfficesState extends State<Offices> {
                       break;
                       
                         
-                       case 8:
+                       case 7:
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) =>
                               ManagementOffices(title: nameOffices[index].name)));
                       break;
 
-                      case 9:
+                      case 8:
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (BuildContext context) =>
                               Labs(title: nameOffices[index].name)));
